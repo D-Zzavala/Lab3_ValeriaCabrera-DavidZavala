@@ -5,17 +5,82 @@
  */
 package lab3_valeriacabrera.davidzavala;
 
-/**
- *
- * @author 50431
- */
+import java.util.Scanner;
+
 public class Lab3_ValeriaCabreraDavidZavala {
 
-    /**
-     * @param args the command line arguments
-     */
+    static Scanner read = new Scanner(System.in);
+
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        char sn = ' ';
+        boolean login = false;
+        boolean clau = false;
+
+        String sudo = "SUDO";
+        String sudopw = "clau123";
+        
+        while (sn == ' ') {
+            System.out.println("1. log in");
+            System.out.println("2. agregar");
+            System.out.println("");
+            System.out.println("");
+            int op = read.nextInt();
+            switch (op) {
+                case 1: {
+                    //log in
+                    break;
+                }
+                case 2: {
+                    //agregar
+                    System.out.println("1. persona \n2. Pisos 0. \nsalir");
+                    int sel = read.nextInt();
+                    switch (sel) {
+                        case 1: {
+                            
+                            break;
+                        }
+                        case 2: {
+                            break;
+                        }
+                        case 0: {
+                            break;
+                        }
+                        default: {
+                            break;
+                        }
+                    }
+                    break;
+                }
+                case 3: {
+                    //mod
+                    System.out.println("1. persona \n2. Pisos 0. \nsalir");
+                    int sel = read.nextInt();
+                    switch (sel) {
+                        case 1: {
+                            break;
+                        }
+                        case 2: {
+                            break;
+                        }
+                        case 0: {
+                            break;
+                        }
+                        default: {
+                            break;
+                        }
+                    }
+                    break;
+                }
+                case 0: {
+                    //salir
+                    sn = 's';
+                    break;
+                }
+                default: {
+                    break;
+                }
+            }
+        }
     }
-    
 }
