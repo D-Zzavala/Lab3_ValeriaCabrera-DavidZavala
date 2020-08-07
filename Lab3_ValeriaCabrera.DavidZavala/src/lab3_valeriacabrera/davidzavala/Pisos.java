@@ -17,15 +17,14 @@ public class Pisos {
     private ArrayList<Ranker> evaluadores = new ArrayList();
     private Ranker director;
     private ArrayList<Personas> habitantes;
-    private int nivel;
 
     public Pisos() {
     }
 
-    public Pisos(String admin, Ranker director, int nivel) {
+    public Pisos(String admin, Ranker director) {
         this.admin = admin;
         this.director = director;
-        this.nivel = nivel;
+        
     }
 
     public String getAdmin() {
@@ -60,17 +59,11 @@ public class Pisos {
         this.habitantes = habitantes;
     }
 
-    public int getNivel() {
-        return nivel;
-    }
-
-    public void setNivel(int nivel) {
-        this.nivel = nivel;
-    }
+    
 
     @Override
     public String toString() {
-        return "Pisos{" + "admin=" + admin + ", evaluadores=" + evaluadores + ", director=" + director + ", habitantes=" + habitantes + ", nivel=" + nivel + '}';
+        return "Pisos{" + "admin=" + admin + ", evaluadores=" + evaluadores + ", director=" + director + ", habitantes=" + habitantes + '}';
     }
     
     

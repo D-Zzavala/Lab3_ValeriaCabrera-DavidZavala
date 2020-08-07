@@ -14,6 +14,13 @@ public class Irregular extends EstadodeRegistro{
     public Irregular() {
         super();
     }
+
+    @Override
+    public String toString() {
+        return "Irregular{" +super.toString() + '}';
+    }
+    
+    
     
     
     

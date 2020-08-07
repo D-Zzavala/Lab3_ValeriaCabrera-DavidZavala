@@ -33,7 +33,7 @@ public class Ranker extends Personas{
 
     @Override
     public String toString() {
-        return "Ranker{" + "pruebas=" + pruebas + '}';
+        return "Ranker{" + "pruebas=" + pruebas +super.toString()+ '}';
     }
     
     

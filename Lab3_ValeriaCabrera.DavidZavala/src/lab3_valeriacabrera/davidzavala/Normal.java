@@ -42,7 +42,7 @@ public class Normal extends Personas {
 
     @Override
     public String toString() {
-        return "Normal{" + "pruebas=" + pruebas + ", descripcion=" + descripcion + '}';
+        return "Normal{" + "pruebas=" + pruebas + ", descripcion=" + descripcion + super.toString()+'}';
     }
     
     

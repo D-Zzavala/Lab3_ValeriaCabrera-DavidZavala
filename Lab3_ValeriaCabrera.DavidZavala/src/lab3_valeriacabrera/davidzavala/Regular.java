@@ -42,7 +42,7 @@ public class Regular extends EstadodeRegistro {
 
     @Override
     public String toString() {
-        return "Regular{" + "usuario=" + usuario + ", contrasena=" + contrasena + '}';
+        return "Regular{" + "usuario=" + usuario + ", contrasena=" + contrasena + super.toString()+'}';
     }
     
     
