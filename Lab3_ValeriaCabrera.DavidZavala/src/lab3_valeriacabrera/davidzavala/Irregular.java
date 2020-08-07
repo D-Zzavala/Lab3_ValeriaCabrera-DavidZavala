@@ -9,7 +9,11 @@ package lab3_valeriacabrera.davidzavala;
  *
  * @author Usuario
  */
-public class Ranker {
+public class Irregular extends EstadodeRegistro{
+
+    public Irregular() {
+        super();
+    }
     
     
     

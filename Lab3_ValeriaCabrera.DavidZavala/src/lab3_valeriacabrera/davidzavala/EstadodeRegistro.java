@@ -12,8 +12,6 @@ package lab3_valeriacabrera.davidzavala;
 public class EstadodeRegistro {
  
     private boolean ingreso;
-    private String usuario;
-    private String contrasena;
 
     public EstadodeRegistro() {
     }
@@ -30,24 +28,6 @@ public class EstadodeRegistro {
         this.ingreso = ingreso;
     }
 
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getContrasena() {
-        return contrasena;
-    }
-
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
-    }
-
-    
-    
     @Override
     public String toString() {
         return "EstadodeRegistro{" + "ingreso=" + ingreso + '}';
