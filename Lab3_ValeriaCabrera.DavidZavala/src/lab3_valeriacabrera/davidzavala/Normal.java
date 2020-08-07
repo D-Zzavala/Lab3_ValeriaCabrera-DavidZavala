@@ -11,16 +11,17 @@ import java.util.ArrayList;
  *
  * @author Usuario
  */
-public class Ranker extends Personas{
+public class Normal extends Personas {
     
     private ArrayList<Pruebas> pruebas = new ArrayList();
+    private String descripcion;
 
-    public Ranker() {
-        super();
+    public Normal() {
     }
 
-    public Ranker(String nombre, String posicion, long ID, EstadodeRegistro estado) {
-        super(nombre, posicion, ID, estado);
+    public Normal(String descripcion) {
+        super();
+        this.descripcion = descripcion;
     }
 
     public ArrayList<Pruebas> getPruebas() {
@@ -31,11 +32,18 @@ public class Ranker extends Personas{
         this.pruebas = pruebas;
     }
 
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     @Override
     public String toString() {
-        return "Ranker{" + "pruebas=" + pruebas + '}';
+        return "Normal{" + "pruebas=" + pruebas + ", descripcion=" + descripcion + '}';
     }
-    
     
     
     
