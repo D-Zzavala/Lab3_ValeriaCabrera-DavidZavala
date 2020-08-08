@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class Pisos {
     
     private String admin;
-    private ArrayList<Ranker> evaluadores = new ArrayList();
+    private ArrayList<Personas> evaluadores = new ArrayList();
     private Ranker director;
     private ArrayList<Personas> habitantes;
 
@@ -35,11 +35,11 @@ public class Pisos {
         this.admin = admin;
     }
 
-    public ArrayList<Ranker> getEvaluadores() {
+    public ArrayList<Personas> getEvaluadores() {
         return evaluadores;
     }
 
-    public void setEvaluadores(ArrayList<Ranker> evaluadores) {
+    public void setEvaluadores(ArrayList<Personas> evaluadores) {
         this.evaluadores = evaluadores;
     }
 

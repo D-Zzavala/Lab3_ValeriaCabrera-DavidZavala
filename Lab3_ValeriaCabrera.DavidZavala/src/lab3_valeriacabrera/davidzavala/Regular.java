@@ -12,13 +12,13 @@ package lab3_valeriacabrera.davidzavala;
 public class Regular extends EstadodeRegistro {
     
     private String usuario;
-    private long contrasena;
+    private String contrasena;
 
     public Regular() {
         super();
     }
 
-    public Regular(String usuario, long contrasena, boolean ingreso) {
+    public Regular(String usuario, String contrasena, boolean ingreso) {
         super(ingreso);
         this.usuario = usuario;
         this.contrasena = contrasena;
@@ -32,11 +32,11 @@ public class Regular extends EstadodeRegistro {
         this.usuario = usuario;
     }
 
-    public long getContrasena() {
+    public String getContrasena() {
         return contrasena;
     }
 
-    public void setContrasena(long contrasena) {
+    public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
 

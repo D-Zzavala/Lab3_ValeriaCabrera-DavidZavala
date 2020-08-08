@@ -14,16 +14,16 @@ import java.util.ArrayList;
 public class Pruebas {
     
     private String nombre;
-    private Ranker evualuador;
+    private Ranker evaluador;
     private ArrayList<Personas> equipo = new ArrayList();
-    private EstadodeRegistro estado;
+    private boolean estado;
 
     public Pruebas() {
     }
 
-    public Pruebas(String nombre, Ranker evualuador, EstadodeRegistro estado) {
+    public Pruebas(String nombre, Ranker evualuador, boolean estado) {
         this.nombre = nombre;
-        this.evualuador = evualuador;
+        this.evaluador = evualuador;
         this.estado = estado;
     }
 
@@ -35,12 +35,12 @@ public class Pruebas {
         this.nombre = nombre;
     }
 
-    public Ranker getEvualuador() {
-        return evualuador;
+    public Ranker getEvaluador() {
+        return evaluador;
     }
 
-    public void setEvualuador(Ranker evualuador) {
-        this.evualuador = evualuador;
+    public void setEvaluador(Ranker evaluador) {
+        this.evaluador = evaluador;
     }
 
     public ArrayList<Personas> getEquipo() {
@@ -51,17 +51,39 @@ public class Pruebas {
         this.equipo = equipo;
     }
 
-    public EstadodeRegistro getEstado() {
+    public boolean getEstado() {
         return estado;
     }
 
-    public void setEstado(EstadodeRegistro estado) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
     }
 
     @Override
     public String toString() {
-        return "Pruebas{" + "nombre=" + nombre + ", evualuador=" + evualuador + ", equipo=" + equipo + ", estado=" + estado + '}';
+        return "Informe de Prueba: "+nombre+"\nAdministrador: "+evaluador+" - "+evaluador.getPosicion()+"\nEquipo: "+imprimir(equipo)+"\nEstado: "+estado(estado);
+    }
+    
+    //imprimir arraylist
+    public String imprimir(ArrayList<Personas> p){
+        
+        String acum="";
+        
+        for (int i = 0; i < p.size(); i++) {
+            acum+=((Personas) p.get(i)).getNombre()+" - "+((Personas) p.get(i)).getPosicion();
+        }
+        
+        return acum;
+    }
+    
+    public String estado(boolean e){
+        
+        if(e){
+            return "aprobado";
+        }else{
+            return "reprobada";
+        }
+        
     }
     
     

@@ -15,6 +15,12 @@ public class Irregular extends EstadodeRegistro{
         super();
     }
 
+    public Irregular(boolean ingreso) {
+        super(ingreso);
+    }
+    
+    
+
     @Override
     public String toString() {
         return "Irregular{" +super.toString() + '}';
