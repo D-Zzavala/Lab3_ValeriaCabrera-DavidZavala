@@ -423,6 +423,27 @@ public class Valeria {
         
     }
     
+    //metodos para visualizar
+    
+    public static void verPisos(ArrayList<Pisos> pisos){
+        
+        for (Object o : pisos) {
+            System.out.println((pisos.indexOf(o)+1) + "- " + o);
+        }
+        
+    }
+    
+    public static void verPruebas(ArrayList<Pruebas> prueba){
+        
+        for (Object o : prueba) {
+            System.out.println((prueba.indexOf(o)+1) + "- " + o);
+        }
+        
+    }
+    
+    
+    
     
     
 }
+
